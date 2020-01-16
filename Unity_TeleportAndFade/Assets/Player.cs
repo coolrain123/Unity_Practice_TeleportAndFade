@@ -27,5 +27,9 @@ public class Player : MonoBehaviour
         {
             StartCoroutine(Scene.NextLevel());
         }
+        if (other.name == "畫面淡去")
+        {
+            StartCoroutine(Scene.Fadeout());
+        }
     }
 }
